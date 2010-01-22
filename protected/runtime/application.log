@@ -1,0 +1,14 @@
+2010/01/21 19:11:45 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/New_York' for 'EST/-5.0/no DST' instead (/srv/http/protected/views/layouts/main.php:49)
+Stack trace:
+#0 /srv/http/yii/framework/web/CBaseController.php(88): SiteController->renderInternal()
+#1 /srv/http/yii/framework/web/CController.php(673): SiteController->renderFile()
+#2 /srv/http/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /srv/http/yii/framework/web/actions/CInlineAction.php(32): SiteController->actionIndex()
+#4 /srv/http/yii/framework/web/CController.php(300): CInlineAction->run()
+#5 /srv/http/yii/framework/web/CController.php(278): SiteController->runAction()
+#6 /srv/http/yii/framework/web/CController.php(257): SiteController->runActionWithFilters()
+#7 /srv/http/yii/framework/web/CWebApplication.php(320): SiteController->run()
+#8 /srv/http/yii/framework/web/CWebApplication.php(120): CWebApplication->runController()
+#9 /srv/http/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
+#10 /srv/http/index.php(11): CWebApplication->run()
+REQUEST_URI=/
