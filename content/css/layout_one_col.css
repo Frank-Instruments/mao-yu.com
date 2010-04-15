@@ -17,15 +17,15 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 body {
 	background: #777;
 	color: #333;
-	min-width:600px;
-	max-width:1200px;
+	min-width:40em;
+	max-width:80em;
 	margin: 0 auto;
 	padding: 0 100px;
 	font-family: "Verdana", sans-serif;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
-	font-size: small;
+	font-size: normal;
 	line-height: 1.8;
 }
 ol, ul {
@@ -65,10 +65,20 @@ a:hover {
 }
 h1, h2, h3 {
 	margin:.8em 0 .2em 0;
-	font-family: "Georgia", "Times New Roman", serif;
 	font-style: normal;
 	line-height: normal;
 	letter-spacing: 1px;
+}
+h2 { 
+	font: 1.5em "Georgia", "Times New Roman", serif;
+}
+h3 { 
+	font: 700 1em "Verdana", "Arial", sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+h4 { 
+	font: 700 1.1em "Georgia", "Times New Roman", serif;
 }
 p {
 	margin:.4em 0 .8em 0;
@@ -78,11 +88,9 @@ img {
 }
 /* Header styles */
 #header {
-	border-top: 2px solid #333;
-	border-left: 2px solid #333;
-	border-right: 2px solid #333;
+	border: 2px solid #333;
 	margin-top: 20px;
-	background: #444;
+	background: #335;
 	clear:both;
 	padding-bottom: 20px;
 }
@@ -90,12 +98,12 @@ img {
 #header h1,
 #header h2 {
 	color: #ddd;
-	padding:.4em 15px 0 15px;
+	padding:.4em 15px 0 0.8em;
 	margin: 0;
 }
 #slogan {
 	color: #ccc;
-	padding:.4em 15px 0 15px;
+	padding:.4em 15px 0 2.2em;
 	font-size: small;
 }
 #header ul {
@@ -124,56 +132,39 @@ img {
 	}
 /* column container */
 .colmask {
-	border-bottom: 2px solid #333;
 	border-left: 2px solid #333;
 	border-right: 2px solid #333;
 	background: #ddd;
 	position:relative;		/* This fixes the IE7 overflow hidden bug and stops the layout jumping out of place */
 	clear:both;
-	float:left;
 	overflow:hidden;	/* This chops off any overhanging divs */
 }
-/* 2 column left menu settings */
-.leftmenu {
-}
-.leftmenu .colright {
-	float:left;
-	width:200%;
-	position:relative;
-	left:12em;
-}
-.leftmenu .col1wrap {
-	float:right;
-	width:50%;
-	position:relative;
-	right:12em;
-	padding-bottom:1em;
-}
-.leftmenu .col1 {
+.content {
 	background: #eee;
 	border: 1px solid #888;
-	margin:1em 1em 1em 12em;
+	margin:1em 1em 1em 1em;
 	padding: 1em;
 	position:relative;
-	right:100%;
 	overflow:hidden;
 }
-.leftmenu .col2 {
-	background: #eee;
-	border: 1px solid #888;
-	float:left;
-	margin: 1em 0em;
-	width:8em;
-	padding: 1em;
-	position:relative;
-	right:11em;
+.content h1{
+	color: #558;
+	font-size:1.6em;
+	text-align:center;
+	border-bottom: 1px dashed #bbb;
+	font-family: "Georgia", "Times New Roman", serif;
 }
 /* Footer styles */
 #footer {
+	border: 2px solid #333;
+	margin-bottom: 20px;
+	background: #335;
 	clear:both;
-	width:100%;
 }
 #footer p {
+	font-size:small;
+	text-align:center;
+	color: #ddd;
 	padding: 1em;
 }
 
