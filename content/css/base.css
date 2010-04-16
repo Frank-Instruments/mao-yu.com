@@ -64,12 +64,11 @@ body, #footer, #header, .colmask,.content {
 #header, #footer {
 			border-color: #bbb;}
 body {		color: #333;}
-a {			color:#369;}
+a {			color:#370;}
 a:hover {	color:#69b;}
 #header p,#header h1,#header h2 {
 			font-size: 2em;
-			color: #558;
-			text-shadow: 3px 3px 5px #ccc;}
+			color: #558;}
 #header a{	text-decoration: none;}
 #slogan {	color: #666;}
 #header ul li a:link, #header ul li a:visited {
@@ -88,7 +87,7 @@ body {		font-family: "Arial","Verdana", sans-serif;
 			font-style: normal;
 			font-variant: normal;
 			font-weight: 400;
-			font-size: normal;
+			font-size: medium;
 			line-height: 1.8;}
 ol, ul {	list-style: square inside;}
 blockquote, q {
@@ -118,7 +117,7 @@ h4 {		font: 700 1.1em  "Arial","Verdana", sans-serif;}
 			list-style: none;}
 #header ul li a:link, #header ul li a:visited {
 			text-decoration:none;
-			font-size: normal;
+			font-size: medium;
 			line-height: 20px;
 			font-weight: bold;}
 
