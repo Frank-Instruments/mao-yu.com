@@ -10,6 +10,7 @@
 #	item, use the pattern "/about/*/"; "/about/*" will also select the parent,
 #	because "*" matches zero or more characters.
 
+# Static resources
 compile '/css/*/' do
 end
 route '/css/*/' do
@@ -27,6 +28,8 @@ end
 route '/favicon/' do
 	'/favicon.ico'
 end
+
+
 
 compile '*' do
   filter :erb
