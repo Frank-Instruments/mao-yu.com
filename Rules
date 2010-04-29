@@ -11,32 +11,33 @@
 #	because "*" matches zero or more characters.
 
 # Static resources
-compile '/css/*/' do
+compile '/(css|favicon)/*' do
 end
-route '/css/*/' do
+route '/(css|favicon)/*' do
 	item.identifier.chop + '.' + item[:extension]
 end
-
-compile '/images/*/' do
-end
-route '/images/*/' do
-	item.identifier.chop + '.' + item[:extension]
-end
-
-compile '/favicon/' do
-end
-route '/favicon/' do
-	'/favicon.ico'
-end
-
-
 
 compile '*' do
-  filter :erb
-  layout 'one_col'
+	unless rep.binary? then
+		case item[:extension]
+		when 'md' then
+			rep.filter :bluecloth
+		when 'html' then
+			rep.filter :erb
+		end
+		layout 'default'
+	end
+end
+route '/' do
+	item.identifier + 'index.html'
 end
 route '*' do
-  item.identifier + 'index.html'
+	case item[:extension]
+	when 'md','html' then
+		item.identifier.chop + '.html'
+	else
+		item.identifier.chop + '.' + item[:extension]
+	end
 end
 
 layout '*', :erb

@@ -44,28 +44,52 @@ img {		margin:10px 0 5px;}
 #header ul li a.active:link, #header ul li a.active:visited, #header ul li a:hover {
 			border-bottom: 4px solid;
 			padding-bottom: 2px;}
-.colmask {	position:relative;/* This fixes the IE7 overflow hidden bug and stops the layout jumping out of place */
+/* column container */
+.colmask {	position:relative;		/* This fixes the IE7 overflow hidden bug and stops the layout jumping out of place */
 			clear:both;
-			overflow:hidden;}/* This chops off any overhanging divs */
-.content {	margin:1em 1em 1em 1em;
-			padding: 1em;
+			float:left;
+			width:100%;			/* width of whole page */
+			overflow:hidden;}	/* This chops off any overhanging divs */
+/* 2 column left menu settings */
+.leftmenu .colright {
+			float:left;
+			width:200%;
 			position:relative;
+			left:12em;}
+.leftmenu .col1wrap {
+			float:right;
+			width:50%;
+			position:relative;
+			right:12em;
+			padding-bottom:1em;}
+.leftmenu .col1_leftmenu {
+			margin:0 1em 0 13em;
+			position:relative;
+			right:100%;
 			overflow:hidden;}
+.leftmenu .col2_leftmenu {
+			float:left;
+			width:10em;
+			position:relative;
+			right:11em;}
+/* 1 column full page settings */
+.fullpage .col1_onecol {
+			margin:0 1em;}
 #footer {	border-top: 1px solid;
 			margin-bottom: 20px;
 			clear:both;}
 #footer p {	font-size:small;
 			text-align:center;
 			padding: 1em;}
-
 /*=== COLORS ===*/
 body, #footer, #header, .colmask,.content {	
 			background: #fafafa;}
 #header, #footer {
 			border-color: #bbb;}
 body {		color: #333;}
-a {			color:#370;}
-a:hover {	color:#69b;}
+a {			color:#008;}
+a:visited {	color:#558;}
+a:hover {	color:#aad;}
 #header p,#header h1,#header h2 {
 			font-size: 2em;
 			color: #558;}
@@ -81,7 +105,6 @@ a:hover {	color:#69b;}
 			border-bottom-color:  #008;}
 .content h1{color: #558;}
 #footer p {	color: #333;}
-
 /*=== FONTS & FORMATTING ===*/
 body {		font-family: "Arial","Verdana", sans-serif;
 			font-style: normal;
