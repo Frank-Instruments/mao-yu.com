@@ -17,7 +17,7 @@
 			'projects'=>'Projects',
 			'software'=>'Software'}
 			.each do |root_cat| %>
-			<li><a href="<%= root_cat[0] %>.html"<% if @item[:root]==root_cat[0]%> class="active"<% end %>/><%= root_cat[1]%></a></li>
+			<li><a href="<%= root_cat[0] %>.html"<% if @item[:root]==root_cat[0]%> class="active"<% end %>><%= root_cat[1]%></a></li>
 			<% end %>
 		</ul>
 		<a href="/"><img src="/images/logo.png" alt="Logo" style="float:left"/></a>
