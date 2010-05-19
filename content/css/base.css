@@ -22,7 +22,7 @@ body {		min-width:40em;
 ol, ul {	margin-left: 0.5em;}
 table {		border-collapse: collapse;/* tables still need 'cellspacing="0"' in the markup */
 			border-spacing: 0;}
-h1, h2, h3 {margin:.8em 0 .2em 0;}
+h1, h2, h3 {margin:.4em 0 .2em 0;}
 p {			margin:.4em 0 .8em 0;}
 img {		margin:10px 0 5px;}
 #header {	border-bottom: 1px solid;
@@ -48,6 +48,7 @@ img {		margin:10px 0 5px;}
 .colmask {	position:relative;		/* This fixes the IE7 overflow hidden bug and stops the layout jumping out of place */
 			clear:both;
 			float:left;
+			padding: 1em 0em;
 			width:100%;			/* width of whole page */
 			overflow:hidden;}	/* This chops off any overhanging divs */
 /* 2 column left menu settings */
@@ -60,10 +61,11 @@ img {		margin:10px 0 5px;}
 			float:right;
 			width:50%;
 			position:relative;
-			right:12em;
-			padding-bottom:1em;}
+			right:12em;}
 .leftmenu .col1_leftmenu {
+			border-left: 1px solid;
 			margin:0 1em 0 13em;
+			padding-left: 1em;
 			position:relative;
 			right:100%;
 			overflow:hidden;}
@@ -104,6 +106,8 @@ a:hover {	color:#aad;}
 			color: #008;
 			border-bottom-color:  #008;}
 .content h1{color: #558;}
+.leftmenu .col1_leftmenu{
+		border-color: #bbb;}
 #footer p {	color: #333;}
 /*=== FONTS & FORMATTING ===*/
 body {		font-family: "Arial","Verdana", sans-serif;
