@@ -22,11 +22,10 @@ body {		min-width:40em;
 ol, ul {	margin-left: 0.5em;}
 table {		border-collapse: collapse;/* tables still need 'cellspacing="0"' in the markup */
 			border-spacing: 0;}
-h1, h2, h3 {margin:.4em 0 .2em 0;}
+h1, h2, h3 {margin:1em 0 .2em 0;}
 p {			margin:.4em 0 .8em 0;}
 img {		margin:10px 0 5px;}
 #header {	border-bottom: 1px solid;
-			margin-top: 20px;
 			clear:both;
 			padding: 0em 1em 20px 1em;}
 #header p,
@@ -86,7 +85,8 @@ img {		margin:10px 0 5px;}
 /*=== COLORS ===*/
 body, #footer, #header, .colmask,.content {	
 			background: #fafafa;}
-#header, #footer {
+#header, #footer, .colmask {
+			background: #fafafa;
 			border-color: #bbb;}
 body {		color: #333;}
 a {			color:#008;}
