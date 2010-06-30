@@ -10,27 +10,48 @@
 #	item, use the pattern "/about/*/"; "/about/*" will also select the parent,
 #	because "*" matches zero or more characters.
 
-# Static resources
-compile '/(css|favicon)/*' do
-end
-route '/(css|favicon)/*' do
-	item.identifier.chop + '.' + item[:extension]
+preprocess do
+	def set_type
+		types = ['projects','resources','notes']
+		# Set type for each item by comparing it against each type
+		items.each do |i|
+			types.each do |j|
+				if i.identifier.index(j) == 1
+					i[:root]=j 
+					# Set item type if it's also a subitem
+					i[:type]=j if i.identifier.length > j.length+2
+				end
+			end
+			# If root or type not set, set it to default
+			i[:root]='index' if i[:root].nil?
+			i[:type]='index' if i[:type].nil?
+		end
+	end
+
+	set_type
 end
 
 compile '*' do
 	unless rep.binary? then
 		case item[:extension]
-		when 'md' then
-			rep.filter :bluecloth
-		when 'html' then
-			rep.filter :erb
+			when 'md'		then
+				rep.filter :bluecloth
+				rep.filter :colorize_syntax,
+					:colorizers => { 'c' => :pygmentize }
+			when 'html'		then
+				rep.filter :erb
+				rep.filter :colorize_syntax,
+					:colorizers => { 'c' => :pygmentize }
+			when 'css'		then rep.filter :rainpress
 		end
-		layout 'default'
+		case item[:extension]
+			when 'md','html' then layout 'default'
+		end
 	end
 end
-route '/' do
-	item.identifier + 'index.html'
-end
+
+route '/(css|favicon)/*' do item.identifier.chop + '.' + item[:extension] end
+route '/'				 do item.identifier + 'index.html' end
 route '*' do
 	case item[:extension]
 	when 'md','html' then

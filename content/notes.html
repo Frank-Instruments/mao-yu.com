@@ -1,0 +1,19 @@
+---
+title: Notes List
+---
+
+<% @items.select{ |i| i[:type] == 'notes'}.each do |i| %>
+	<h2><%= i[:title] %></h2>
+	<%= i[:summary] %>
+	<div class="summary_footer">
+		<ul><li>
+			<a href="<%= i.path %>">Full info</a>
+			</li>
+			<% i[:proj_links].each do |j,k| %>
+			<li>
+			<a href="<%= k %>"><%= j %></a>
+			</li>
+		<% end %>
+	</div>
+<% end %>
+
