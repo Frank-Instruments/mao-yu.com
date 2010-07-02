@@ -15,14 +15,14 @@ proj_links:
 ---
 
 <h2>Summary</h2>
-<p><%= @item[:summary] %></p>
+<%= @item[:summary] %>
 
 <h3>Command line argument parsing</h3>
 <div class="summary_footer">
 	<ul><li><a href="http://maoserr.github.com/C-library/argparser/">Documentation</a></li>
 	</ul>
 </div>
-<p>This is a simple command line argument parsing routine, meant to be included
+This is a simple command line argument parsing routine, meant to be included
 in source form in the project.  Some features are:
 <ul><li>Short ('-v') and long ('--verbose') argument parsing</li>
 	<li>Argument parsing with values ('-v 1' would set argument with name 'v' to '1')</li>
@@ -30,18 +30,17 @@ in source form in the project.  Some features are:
 	<li>Ability to parse both command line ('argc' and 'argv') and also a config file</li>
 </ul>
 To see a short example, take a look at the documentation.
-</p>
 
 <h3>Logging interface</h3>
 <div class="summary_footer">
 	<ul><li><a href="http://maoserr.github.com/C-library/logger/">Documentation</a></li>
 	</ul>
 </div>
-<p>This is a simple logging interface, meant to be included in source form in
+This is a simple logging interface, meant to be included in source form in
 the project. Some features are:
 <ul><li>Handles logging to file, console, and custom callback</li>
 	<li>Ability to log with different levels (from 0 and up), and set a cut off
 	based on level</li>
 </ul>
 To see a short example, take a look at the documentation.
-</p>
+

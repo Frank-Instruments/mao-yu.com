@@ -27,7 +27,6 @@ preprocess do
 			i[:type]='index' if i[:type].nil?
 		end
 	end
-
 	set_type
 end
 
@@ -36,11 +35,11 @@ compile '*' do
 		case item[:extension]
 			when 'md'		then
 				rep.filter :bluecloth
-				rep.filter :colorize_syntax,
+				rep.filter :highlight_syntax,
 					:colorizers => { 'c' => :pygmentize }
 			when 'html'		then
 				rep.filter :erb
-				rep.filter :colorize_syntax,
+				rep.filter :highlight_syntax,
 					:colorizers => { 'c' => :pygmentize }
 			when 'css'		then rep.filter :rainpress
 		end

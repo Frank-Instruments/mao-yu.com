@@ -1,3 +1,9 @@
 ---
-title: Software tools
+title: Resource tools
 ---
+<ul>
+<% @items.select{ |i| i[:type] == 'resources'}.each do |i| %>
+<li><a href="<%= i.path %>"><%= i[:title] %></a> - Modified: <%= i[:modified] %></li>
+<% end %>
+</ul>
+

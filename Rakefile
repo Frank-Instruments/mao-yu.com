@@ -1,6 +1,4 @@
 require 'nanoc3/tasks'
-require 'rubygems'
-require 'highline/import'
 
 def ftppush(server,user,pass,directory)
 	IO.popen('lftp -c "set ftp:list-options -a;
@@ -16,6 +14,7 @@ def ftppush(server,user,pass,directory)
 end
 
 namespace :deploy do
+	require 'highline/import'
 
 	desc 'Deploy site to byet'
 	task :ftp_byet do
