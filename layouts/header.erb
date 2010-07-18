@@ -23,12 +23,12 @@
 <body>
 	<div id="header">
 		<ul>
-		<% {'index'=>'Home',
-			'projects'=>'Projects',
-			'resources'=>'Resources',
-			'notes'=>'Notes'}
+		<% {''=>'Home',
+			'projects/'=>'Projects',
+			'resources/'=>'Resources',
+			'notes/'=>'Notes'}
 			.each do |root_cat| %>
-			<li><a href="/<%= root_cat[0] %>/"<% if @item[:root]==root_cat[0]%> class="active"<% end %>><%= root_cat[1]%></a></li>
+			<li><a href="/<%= root_cat[0] %>"<% if @item[:root]==root_cat[0]%> class="active"<% end %>><%= root_cat[1]%></a></li>
 			<% end %>
 		</ul>
 		<a href="/"><img src="/images/logo.png" alt="Logo" style="float:left"/></a>
