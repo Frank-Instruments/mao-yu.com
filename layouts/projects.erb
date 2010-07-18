@@ -3,7 +3,7 @@
 	<div class="col1_onecol">
 		<h2><%= @item[:title] %></h2>
 		<div class="summary_footer">
-			<ul><% @item[:proj_links].each do |j,k| %>
+			<ul><% @item[:links].each do |j,k| %>
 				<li><a href="<%= k %>"><%= j %></a></li>
 			<% end %></ul>
 		</div>

@@ -4,14 +4,14 @@ modified: Wednesday, June 30, 2010
 
 summary: 'A 2D space adventure game written with C++ utilizing SDL.'
 
-proj_links:
+links:
   Github: http://github.com/maoserr/Epiar
   Project Page: http://www.epiar.net
   Developer API: http://maoserr.github.com/Epiar/
 
 ---
 
-<p>Epiar is a project I am working on for fun along with a couple of other
+Epiar is a project I am working on for fun along with a couple of other
 people.  Currently I've implemented the audio backend, some of the in game UI,
 and done most of the documentation as well as packaging for Ubuntu and Windows.
-</p>
+

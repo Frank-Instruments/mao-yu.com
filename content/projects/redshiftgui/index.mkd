@@ -1,0 +1,35 @@
+---
+title: RedshiftGUI
+modified: Sunday, July 11, 2010
+
+summary: 'Monitor temperature adjustment program based on time of day. Helps prevent eye strain.'
+
+links:
+   Github: http://github.com/maoserr/redshiftgui
+   Downloads: http://github.com/maoserr/redshiftgui/downloads
+   Bugs: http://github.com/maoserr/redshiftgui/issues
+   Developer API: http://maoserr.github.com/redshiftgui/
+
+---
+
+About
+-----
+RedshiftGUI is a fork of the [Redshift project][redshift] by Jon Lund Steffensen. It was something I made because I wanted a GUI version of the program. The Redshift project itself is inspired by [f.lux][flux], there's more information on the benefit of this program on their home page.
+
+Screenshots
+-----------
+![Main dialog][screenmain]
+
+![Settings][screensett]
+
+![Location][screenloc]
+
+
+
+[redshift]: http://jonls.dk/redshift/ "Redshift homepage"
+[flux]: http://jonls.dk/redshift/ "f.lux homepage"
+
+[screenmain]: main.png "Main dialog"
+[screensett]: settings.png "Settings dialog"
+[screenloc]: location.png "Location dialog"
+

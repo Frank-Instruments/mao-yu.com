@@ -1,0 +1,23 @@
+---
+title: Home
+
+---
+
+About this site
+===============
+
+This site serves mostly as an archive of useful things that I want to remember.  You may or may not find things useful here.
+Currently it's divided into these sections:
+
+* **Projects** - School/personal/professional projects that I've done.
+* **Resources** - Useful resources (mostly geared towards programmers/scientists).
+* **Notes** - Useful notes I've taken on subjects I'm interested in.
+
+About me
+========
+
+I am a student in biomechanics with an interesting in computational modeling of the body.
+I am interested in Finite Element Modelling, biomechanics, and any type of computer simulation and its theory.
+
+As a result of my schooling, I've also became interested in programming in general.
+
