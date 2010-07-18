@@ -16,7 +16,7 @@ preprocess do
 		# Set type for each item by comparing it against each type
 		items.each do |i|
 			case i[:extension]
-				when 'html','md'
+				when 'html','mkd'
 					types.each do |j|
 						if i.identifier.index(j) == 1
 							i[:root]=j 
@@ -36,18 +36,18 @@ end
 compile '*' do
 	unless rep.binary? then
 		case item[:extension]
-			when 'md'		then
+			when 'mkd'		then
+				rep.filter :highlight_syntax,
+					:colorizers => { 'c' => :pygmentize }
 				rep.filter :bluecloth
-				rep.filter :highlight_syntax,
-					:colorizers => { 'c' => :pygmentize }
 			when 'html','php'	then
-				rep.filter :erb
 				rep.filter :highlight_syntax,
 					:colorizers => { 'c' => :pygmentize }
+				rep.filter :erb
 			when 'css'		then rep.filter :rainpress
 		end
 		case item[:extension]
-			when 'md','html' then 
+			when 'mkd','html' then 
 				case item[:type]
 					when 'projects' then layout 'projects'
 					else layout 'default'
@@ -56,14 +56,11 @@ compile '*' do
 	end
 end
 
-route '/(css|favicon)/*' do item.identifier.chop + '.' + item[:extension] end
-route '/'				 do item.identifier + 'index.html' end
 route '*' do
+	filename = item.attributes[:filename].sub(/^content/,'')
 	case item[:extension]
-	when 'md','html' then
-		item.identifier.chop + '.html'
-	else
-		item.identifier.chop + '.' + item[:extension]
+	when 'mkd' then filename.sub(/mkd$/,'html')
+	else filename
 	end
 end
 
