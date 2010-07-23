@@ -24,9 +24,9 @@
 	<div id="header">
 		<ul>
 		<% {''=>'Home',
-			'projects/'=>'Projects',
-			'resources/'=>'Resources',
-			'notes/'=>'Notes'}
+			'projects'=>'Projects',
+			'resources'=>'Resources',
+			'notes'=>'Notes'}
 			.each do |root_cat| %>
 			<li><a href="/<%= root_cat[0] %>"<% if @item[:root]==root_cat[0]%> class="active"<% end %>><%= root_cat[1]%></a></li>
 			<% end %>

@@ -25,8 +25,8 @@ preprocess do
 						end
 					end
 					# If root or type not set, set it to default
-					i[:root]='index' if i[:root].nil?
-					i[:type]='index' if i[:type].nil?
+					i[:root]='' if i[:root].nil?
+					i[:type]='' if i[:type].nil?
 			end
 		end
 	end
