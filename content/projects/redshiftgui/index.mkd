@@ -24,7 +24,33 @@ Screenshots
 
 ![Location][screenloc]
 
+Basic usage
+-----------
+ 1. Install one of the packages
+ 2. Set your location using on the location dialog
+ 3. You're done!
 
+You can tweak some of the settings, but the default should work fine.
+
+Changelog
+---------
+###Thursday, August 05, 2010 (Version 0.2.1)###
+
+ * Added auto method in options
+ * Added temperature map for elevation to temperature adjustment
+ * Made brightness control work
+ * Refactored much of the gamma code
+ * Add preview mode
+
+###Tuesday, July 20, 2010 - (Version 0.1.2)###
+
+ * Added brightness control
+ * Ability to start minimized or disabled
+
+Limitations
+-----------
+1. WinGDI has a lower limit on gamma ramps, so brightness cannot go below a
+   certain limit.
 
 [redshift]: http://jonls.dk/redshift/ "Redshift homepage"
 [flux]: http://jonls.dk/redshift/ "f.lux homepage"
