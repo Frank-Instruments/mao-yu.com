@@ -9,30 +9,20 @@
 	<meta name="keywords" content="<%= @item[:tags] %>" />
 	<meta name="robots" content="index, follow" />
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-	<script type="text/javascript">
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-17478090-1']);
-	  _gaq.push(['_trackPageview']);
-	  (function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	</script>
+	<%= render 'analytics' %>
 </head>
 <body>
-	<div id="header">
-		<ul>
-		<% {''=>'Home',
-			'projects'=>'Projects',
-			'resources'=>'Resources',
-			'notes'=>'Notes'}
-			.each do |root_cat| %>
-			<li><a href="/<%= root_cat[0] %>"<% if @item[:root]==root_cat[0]%> class="active"<% end %>><%= root_cat[1]%></a></li>
-			<% end %>
-		</ul>
-		<a href="/"><img src="/images/logo.png" alt="Logo" style="float:left"/></a>
-			<h1>Mao Yu</h1>
-		<span id="slogan">Casual code cook...</span>
-	</div>
+<div id="header">
+	<ul>
+		<% type=Categories.get_type_by_id(@item.identifier) %>
+		<li><a href="/" <% if type==''%> class="active"<% end %>>Home</a></li>
+		<% Categories.get_types.each do |i| %>
+			<li><a href="/<%= i[:name] %>/"
+			<% if type==i[:name] %> class="active"<% end %>><%= i[:title] %></a></li>
+		<% end %>
+	</ul>
+	<a href="/"><img src="/images/logo.png" alt="Logo" id="logo"/></a>
+	<h1>Mao Yu</h1>
+	<span id="slogan">Casual code cook...</span>
+</div>
 
