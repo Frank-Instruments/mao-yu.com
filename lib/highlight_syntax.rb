@@ -5,7 +5,8 @@ class HighlightSyntax < Nanoc3::Filter
 	newcontent = content
 
     # Colorize
-	content.scan(%r'<pre><code class="language-([^"]+)">(.*?)</code></pre>'m){|lang,code|
+	content.scan(%r'<pre><code class="language-([^"]+)">(.*?)</code></pre>'m){
+			|lang,code|
 		highlighted = pygmentize(code,lang,params)
 		rep_txt = '<pre><code class="language-'+lang+'">'+code+'</code></pre>'
 		newcontent=newcontent.gsub(rep_txt,highlighted)
