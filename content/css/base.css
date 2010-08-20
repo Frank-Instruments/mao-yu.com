@@ -32,7 +32,6 @@ img {		margin:10px 0 5px;}
 #header h1,
 #header h2{	padding:.4em 15px 0 0em;
 			margin: 0;}
-#slogan {	padding:.4em 15px 0 0.3em;}
 #header ul {float: right;
 			padding: 10px;}
 #header ul li {
@@ -43,6 +42,8 @@ img {		margin:10px 0 5px;}
 #header ul li a.active:link, #header ul li a.active:visited, #header ul li a:hover {
 			border-bottom: 4px solid;
 			padding-bottom: 2px;}
+#logo {		float:left;}
+#slogan {	padding:.4em 15px 0 0.3em;}
 /* column container */
 .colmask {	position:relative;		/* This fixes the IE7 overflow hidden bug and stops the layout jumping out of place */
 			clear:both;
@@ -140,7 +141,9 @@ a:hover {	text-decoration:none;}
 h1, h2, h3 {font-style: normal;
 			line-height: normal;
 			letter-spacing: 1px;}
-h1{			font:1.6em  "Arial","Verdana", sans-serif;}
+h1 a,h2 a,h3 a,h4 a
+			{text-decoration: none;}
+h1 {			font:1.6em  "Arial","Verdana", sans-serif;}
 h2 {		font: 1.5em  "Arial","Verdana", sans-serif;}
 h3 {		font: 700 1em "Arial","Verdana", sans-serif;
 			letter-spacing: 2px;
@@ -162,6 +165,7 @@ h4 {		font: 700 1.1em  "Arial","Verdana", sans-serif;}
 			margin: 10px;
 			padding: 10px;
 			font-size:small;}
+.highlight {font-size:small;}
 .highlight .hll { background-color: #ffffcc }
 .highlight  { background: #ffffff; }
 .highlight .c { color: #808080 } /* Comment */
