@@ -1,5 +1,7 @@
 ---
 title: Home
+tags: Mao Yu, Mao-Yu, biomechanics, programmer.
+summary: Mao Yu's homepage. An archive of some possibly useful stuff.
 
 ---
 
@@ -9,9 +11,9 @@ About this site
 This site serves mostly as an archive of useful things that I want to remember.  You may or may not find things useful here.
 Currently it's divided into these sections:
 
-* **Projects** - School/personal/professional projects that I've done.
-* **Resources** - Useful resources (mostly geared towards programmers/scientists).
-* **Notes** - Useful notes I've taken on subjects I'm interested in.
+* [**Projects**][proj] - School/personal/professional projects that I've done.
+* [**Resources**][res] - Useful resources (mostly geared towards programmers/scientists).
+* [**Notes**][notes] - Useful notes I've taken on subjects I'm interested in.
 
 About me
 ========
@@ -20,4 +22,8 @@ I am a student in biomechanics with an interesting in computational modeling of 
 I am interested in Finite Element Modelling, biomechanics, and any type of computer simulation and its theory.
 
 As a result of my schooling, I've also became interested in programming in general.
+
+[proj]: /projects/ Projects
+[res]: /resources/ Resources
+[notes]: /notes/ Notes
 

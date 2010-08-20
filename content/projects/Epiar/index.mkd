@@ -11,7 +11,5 @@ links:
 
 ---
 
-Epiar is a project I am working on for fun along with a couple of other
-people.  Currently I've implemented the audio backend, some of the in game UI,
-and done most of the documentation as well as packaging for Ubuntu and Windows.
+Epiar is a project I am working on for fun along with a couple of other people.  Currently I've implemented the audio backend, some of the in game UI, and done most of the documentation as well as packaging for Ubuntu and Windows.
 

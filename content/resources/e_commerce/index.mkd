@@ -28,8 +28,8 @@ References
  * [List of e-commerce providers](http://www.nstarsolutions.com/regservices.htm)
  * [Review of a few processors](http://foliovision.com/2010/01/21/paypal-google-checkout-digital-river)
 
-[ejunkie]: http://www.e-junkie.com/ "E-junkie"
-[swpal]: http://www.swpal.com/ "Swpal"
-[2chkout]: http://www.2checkout.com/ "2Checkout"
-[fastspring]: http://www.fastspring.com/ "FastSpring"
+[ejunkie]: http://www.e-junkie.com/ E-junkie
+[swpal]: http://www.swpal.com/ Swpal
+[2chkout]: http://www.2checkout.com/ 2Checkout
+[fastspring]: http://www.fastspring.com/ FastSpring
 

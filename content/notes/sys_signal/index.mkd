@@ -8,11 +8,8 @@ tags: win32api, c programming, console programming
 
 ---
 
-<h2><%= @item[:title] %></h2>
-<p>
 Linux programmers are quite familiar with the `sys/signal.h` way of
 handling Ctrl-C events, such as this snippet:
-</p>
 <pre><code class="language-c">
 #include <sys/signal.h>
 ...
@@ -31,12 +28,10 @@ static void sig_register(void){
 	sigaction(SIGTERM, &sigact, NULL);
 }
 </code></pre>
-<p>
 Which creates a simple handler for SIGINT and SIGTERM that sets the value of the
 global variable 'exiting' to 1 on Ctrl-C events.
 
 While Win32 doesn't support signal handling the POSIX way, you can make it cross platform with the corresponding Win32 version using the function <code>SetConsoleCtrlHandler</code>:
-</p>
 <pre><code class="language-c">
 #include <windows.h>
 ...
@@ -69,13 +64,12 @@ static void sig_register(void){
 }
 </code></pre>
 
-<p>
 Note that by returning true, you're telling the windows that you've handled the event, and the default handler (usually 'exit') will not be called.
-</p>
 
-<h3>References</h3>
-<ol>
-	<li><a href="http://opengroup.org/onlinepubs/007908775/xsh/sigaction.html">Sigaction on opengroup</a></li>
-	<li><a href="http://msdn.microsoft.com/en-us/library/ms686016(VS.85).aspx">SetConsoleCtrlHandler on MSDN</a></li>
-</ol>
+###References###
+1. [Sigaction on opengroup][sigact]
+2. [SetConsoleCtrlHandler on MSDN][setconsolectrl]
+
+[sigact]: http://opengroup.org/onlinepubs/007908775/xsh/sigaction.html Sigaction
+[setconsolectrl]: http://msdn.microsoft.com/en-us/library/ms686016(VS.85).aspx SetConsoleCtrl
 
