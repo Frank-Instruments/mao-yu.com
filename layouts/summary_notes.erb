@@ -3,7 +3,7 @@
 <% subitems.each do |subitem| %>
 <h2><a href="<%=subitem.path%>"><%=subitem[:title]%></a></h2>
 	<div class="summary_info">
-		Last modified: <%=Categories.format_time(subitem.mtime)%>
+		Last modified: <%=subitem[:modified]%>
 	</div>
 	<% if subitem[:summary] %>
 		<p><%=subitem[:summary]%></p>

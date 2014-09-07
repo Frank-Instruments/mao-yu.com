@@ -1,13 +1,13 @@
 ---
 title: RedshiftGUI
-modified: Thursday, August 05, 2010
+modified: 09/07/14
 tags: redshiftgui, redshift, f.lux, gui, monitor color, sun elevation
 
 summary: 'Monitor temperature adjustment program based on time of day. Helps prevent eye strain.'
 
 links:
    Github: http://github.com/maoserr/redshiftgui
-   Downloads: http://github.com/maoserr/redshiftgui/downloads
+   Downloads: https://github.com/maoserr/redshiftgui/releases
    Bugs: http://github.com/maoserr/redshiftgui/issues
    Developer API: http://maoserr.github.com/redshiftgui/
 

@@ -1,5 +1,5 @@
 Mao Yu - github home page
 =========================
 
-See [here](http://www.mao-yu.com/) for the corresponding home page.
+See [here](http://maoserr.github.io/) for the corresponding home page.
 

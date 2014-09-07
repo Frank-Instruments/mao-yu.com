@@ -3,7 +3,7 @@
 	Categories.select_items_by_type(@items,'resources')) %>
 <% subitems.each do |subitem| %>
 	<li><a href="<%=subitem.path%>"><%=subitem[:title]%></a>
-		- Modified: <%=Categories.format_time(subitem.mtime)%>
+		- Modified: <%=subitem[:modified]%>
 	</li>
 <% end %>
 </ul>
