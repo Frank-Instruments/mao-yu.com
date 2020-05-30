@@ -1,0 +1,61 @@
+---
+title: Scientific Computing Software
+modified: Thursday, July 08, 2010
+tags: scientific software, numerical computing
+
+---
+
+Numerical
+---------
+Numerical software generally consists of software geared towards processing of actual data and implementation of algorithms. They are more similar to programming languages
+
+###[MATLAB][matlab]###
+MATLAB is probably the de facto standard in the professional and scientific industry.  I view it as currently the most well rounded software for rapidly prototyping a scientific idea.
+
+###[Scilab][scilab]###
+Scilab attempts to be a less than compatible clone to MATLAB.  It is not as complete as MATLAB, but it is free and just as easy to pick up.
+
+###[SciPy][scipy]###
+SciPy takes a different approach than Scilab and uses Python as a base language for numerical computing.  This one's good enough for most things, but is quite useful for programmers due to the fact that it allows us to tap into the vast libraries of python.
+
+###[Octave][oct]###
+Attempts to be an open source clone of MATLAB, currently not nearly as well rounded as MATLAB, and lacks a good plotting framework.  Useful if you want to run some simple MATLAB scripts if you don't have MATLAB as it is syntax compatible with MATLAB.
+
+Symbolic
+--------
+Symbolic software can perform algebraic routines without the need to substitute in actual values (at least that's the extent to which I use them) although most of them can process data as well to an extent.
+
+###[Mathematica][mathmatica]###
+Probably the best and most well known symbolic language.
+
+###[Sage][sage]###
+Pretty well rounded open source system, looks like a bit of a chore to install however (though it's probably getting better).
+
+###[Maxima][maxima]###
+Good open source algebra system, less complete than Mathematica or Sage, uses a Lisp like language for programming (for better or worse, up to you to decide).
+
+Statistical
+-----------
+Statistical software analyzes data for trends, correlation, etc.
+
+###[SAS][sas]###
+SAS is the big one in statistical computing, not free however.
+
+###[R][r]###
+Open source statistical software, probably just as good as SAS, but might not be as well used in the industry.
+
+Note
+-----
+It should be noted that most of the software here does a combination of numerical, symbolic, and also statistical, I merely list them under the category that they were focused on.
+
+[matlab]: http://www.mathworks.com MATLAB
+[scilab]: http://www.scilab.org Scilab
+[scipy]: http://www.scipy.org SciPy
+[oct]: http://www.octave.org Octave
+[mathmatica]: http://www.mathematica.com Mathmatica
+[sage]: http://www.sagemath.org/ Sage
+[maxima]: http://maxima.sourceforge.net Maxima
+[sas]: http://www.sas.com SAS
+[r]: http://www.r-project.org/ R
+
+

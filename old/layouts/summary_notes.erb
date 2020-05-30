@@ -1,0 +1,20 @@
+<% subitems=Categories.sort_by_date(
+	Categories.select_items_by_type(@items,'notes')) %>
+<% subitems.each do |subitem| %>
+<h2><a href="<%=subitem.path%>"><%=subitem[:title]%></a></h2>
+	<div class="summary_info">
+		Last modified: <%=subitem[:modified]%>
+	</div>
+	<% if subitem[:summary] %>
+		<p><%=subitem[:summary]%></p>
+	<% end %>
+	<% if subitem[:links] %>
+		<div class="summary_footer">
+			<ul>
+				<% subitem[:links].each do |j,k| %>
+					<li><a href="<%=k%>"><%=j%></a></li>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
+<% end %>

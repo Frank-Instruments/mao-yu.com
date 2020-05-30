@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<title>Mao Yu's kitchen - <%= @item[:title] %></title>
+	<link rel="stylesheet" type="text/css" href="/css/base.css" media="screen" />
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<meta name="description" content="<%= @item[:summary] %>" />
+	<meta name="keywords" content="<%= @item[:tags] %>" />
+	<meta name="robots" content="index, follow" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+<div id="header">
+	<ul>
+		<% type=Categories.get_type_by_id(@item.identifier) %>
+		<li><a href="/" <% if type==''%> class="active"<% end %>>Home</a></li>
+		<% Categories.get_types.each do |i| %>
+			<li><a href="/<%= i[:name] %>/"
+			<% if type==i[:name] %> class="active"<% end %>><%= i[:title] %></a></li>
+		<% end %>
+	</ul>
+	<a href="/"><img src="/images/logo.png" alt="Logo" id="logo"/></a>
+	<h1>Mao Yu</h1>
+	<span id="slogan">Casual code cook...</span>
+</div>
+

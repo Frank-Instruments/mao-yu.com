@@ -1,0 +1,32 @@
+---
+title: Reference Managers
+modified: Wednesday, June 30, 2010
+tags: scientific software, word processing
+
+---
+
+[Mendeley][mend]
+----------------
+
+Mendeley is my current preferred reference manager. Reasons why I like it:
+Automatic synchronization of references
+* Synchronization of up to 500 MB of attachments
+* Public profiles - see mine [here][mendprof]
+* Shared collection - automatic sharing of collection of references
+* Use of sqlite for database - you can write your own scripts to read the bibliographic data
+* Automatic parsing of PDF files - not a big deal for me, since I import mostly from Google scholar anyways, but good for those old old papers
+* Extensions for Open Office, Word
+
+Others to look at
+-----------------
+
+###[Zotero][zotero]###
+Another popular free reference manager built as a Firefox extension.  Since I use Opera, this is less ideal for me.
+
+###[Endnote][endnote]###
+The old commercial reference manager that everybody liked before Mendeley.
+
+[mend]: http://www.mendeley.com/ Mendeley
+[mendprof]: http://www.mendeley.com/profiles/mao-yu/ Mendeley profile
+[zotero]: http://www.zotero.org/ Zotero
+[endnote]: http://www.endnote.com/ Endnote

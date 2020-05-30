@@ -1,0 +1,35 @@
+---
+title: C utility library
+
+summary: 'Utility library written in C to do some common mundane tasks that most programs need to do.  Currently includes command line argument parsing and output logging to console/file/function'
+
+links:
+   Github: "http://github.com/maoserr/C-library"
+   Download: "http://github.com/maoserr/C-library/tarball/master"
+
+---
+
+###Command line argument parsing###
+- [Documentation](http://maoserr.github.com/C-library/argparser/)
+
+This is a simple command line argument parsing routine, meant to be included
+in source form in the project.  Some features are:
+
+- Short ('-v') and long ('--verbose') argument parsing
+- Argument parsing with values ('-v 1' would set argument with name 'v' to '1')
+- Ability to detect unknown arguments
+- Ability to parse both command line ('argc' and 'argv') and also a config file
+
+To see a short example, take a look at the documentation.
+
+###Logging interface###
+- [Documentation](http://maoserr.github.com/C-library/logger/)
+
+This is a simple logging interface, meant to be included in source form in
+the project. Some features are:
+
+- Handles logging to file, console, and custom callback
+- Ability to log with different levels (from 0 and up), and set a cut off based on level
+
+To see a short example, take a look at the documentation.
+
