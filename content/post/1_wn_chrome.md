@@ -27,7 +27,6 @@ flowchartDiagrams:
 sequenceDiagrams:
   enable: false
   options: ''
-draft: true
 
 ---
 Testing chrome
