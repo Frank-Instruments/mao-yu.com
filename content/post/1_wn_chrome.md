@@ -1,12 +1,15 @@
 ---
-title: 1_wn_chrome
+title: Chrome Webnovel Extension
 date: 2020-05-30T21:18:21.000+00:00
 lastmod: 2020-05-30T21:18:21.000+00:00
 keywords: []
 description: ''
 tags: []
-categories: []
-author: ''
+categories:
+- chrome extension
+- web novel
+- typescript
+author: Maoserr
 comment: false
 toc: false
 autoCollapseToc: false
@@ -27,4 +30,4 @@ sequenceDiagrams:
 draft: true
 
 ---
-<!--more-->
+Testing chrome
