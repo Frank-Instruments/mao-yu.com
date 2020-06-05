@@ -1,8 +1,8 @@
 ---
-title: "1_wn_chrome"
-date: 2020-05-30T16:18:21-05:00
-lastmod: 2020-05-30T16:18:21-05:00
-draft: false
+title: "{{ replace .TranslationBaseName "-" " " | title }}"
+date: {{ .Date }}
+lastmod: {{ .Date }}
+draft: true
 keywords: []
 description: ""
 tags: []
