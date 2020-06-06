@@ -11,6 +11,7 @@ fields:
 - type: datetime
   name: lastmod
   label: lastmod
+  default: now
 - type: list
   name: keywords
   label: keywords
@@ -26,6 +27,7 @@ fields:
 - type: text
   name: author
   label: author
+  default: Maoserr
 - type: boolean
   name: comment
   label: comment
