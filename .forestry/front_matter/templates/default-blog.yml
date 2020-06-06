@@ -1,0 +1,81 @@
+---
+label: Default Blog
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: datetime
+  name: lastmod
+  label: lastmod
+- type: list
+  name: keywords
+  label: keywords
+- type: text
+  name: description
+  label: description
+- type: list
+  name: tags
+  label: tags
+- type: list
+  name: categories
+  label: categories
+- type: text
+  name: author
+  label: author
+- type: boolean
+  name: comment
+  label: comment
+- type: boolean
+  name: toc
+  label: toc
+- type: boolean
+  name: autoCollapseToc
+  label: autoCollapseToc
+- type: boolean
+  name: postMetaInFooter
+  label: postMetaInFooter
+- type: boolean
+  name: hiddenFromHomePage
+  label: hiddenFromHomePage
+- type: boolean
+  name: contentCopyright
+  label: contentCopyright
+- type: boolean
+  name: reward
+  label: reward
+- type: boolean
+  name: mathjax
+  label: mathjax
+- type: boolean
+  name: mathjaxEnableSingleDollar
+  label: mathjaxEnableSingleDollar
+- type: boolean
+  name: mathjaxEnableAutoNumber
+  label: mathjaxEnableAutoNumber
+- type: boolean
+  name: hideHeaderAndFooter
+  label: hideHeaderAndFooter
+- type: field_group
+  name: flowchartDiagrams
+  label: flowchartDiagrams
+  fields:
+  - type: boolean
+    name: enable
+    label: enable
+  - type: text
+    name: options
+    label: options
+- type: field_group
+  name: sequenceDiagrams
+  label: sequenceDiagrams
+  fields:
+  - type: boolean
+    name: enable
+    label: enable
+  - type: text
+    name: options
+    label: options
