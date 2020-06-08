@@ -1,24 +1,24 @@
 +++
 author = "Maoserr"
 autoCollapseToc = false
-categories = []
+categories = ["bert guide"]
 comment = false
 contentCopyright = false
-date = ""
+date = 2020-06-06T17:10:00Z
 description = ""
 draft = true
 hiddenFromHomePage = false
 hideHeaderAndFooter = false
 keywords = []
-lastmod = 2020-06-06T17:10:11Z
+lastmod = ""
 mathjax = false
 mathjaxEnableAutoNumber = false
 mathjaxEnableSingleDollar = false
 postMetaInFooter = false
 reward = false
 tags = []
-title = "Bert Research"
-toc = false
+title = "Bert Model Guide"
+toc = true
 [flowchartDiagrams]
 enable = false
 options = ""
@@ -27,6 +27,12 @@ enable = false
 options = ""
 
 +++
+# Using Google's Bert Model
+
+Google's Bert model can be used for various NLP related tasks, this series of article documents my experiences.
+
+## Background
+
 [https://blog.usejournal.com/part1-bert-for-advance-nlp-with-transformers-in-pytorch-357579d63512](https://blog.usejournal.com/part1-bert-for-advance-nlp-with-transformers-in-pytorch-357579d63512 "Transformers Tutorial")
 
 How to batch, shuffle repeat
