@@ -1,6 +1,6 @@
 +++
 author = "Maoserr"
-autoCollapseToc = false
+autoCollapseToc = true
 categories = ["bert guide"]
 comment = false
 contentCopyright = false
