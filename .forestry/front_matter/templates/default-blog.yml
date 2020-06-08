@@ -12,7 +12,7 @@ fields:
 - type: datetime
   name: lastmod
   label: lastmod
-  default: now
+  default: ''
 - type: list
   name: keywords
   label: keywords
