@@ -84,3 +84,4 @@ fields:
     label: options
 pages:
 - content/post/bert-research.md
+- content/post/machine-learning.md
